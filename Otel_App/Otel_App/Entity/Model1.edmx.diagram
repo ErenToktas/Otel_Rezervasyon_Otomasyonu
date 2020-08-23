@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9de6c81ee0474cc58afe46307abe80d7" Name="Diagram1">
+        <EntityTypeShape EntityType="OtelModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLBANKA" Width="1.5" PointX="5.25" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLBANKAHAREKET" Width="1.5" PointX="10.5" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLBIRIM" Width="1.5" PointX="8.25" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLCARI" Width="1.5" PointX="5.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLCARIHAREKET" Width="1.5" PointX="10.5" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLCARIKONUKHAREKET" Width="1.5" PointX="13.5" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLCARITUR" Width="1.5" PointX="3" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLDEPARTMAN" Width="1.5" PointX="3.75" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLDURUM" Width="1.5" PointX="0.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLGOREV" Width="1.5" PointX="6" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLISLEM" Width="1.5" PointX="3" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLKASA" Width="1.5" PointX="3" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLKASAHAREKET" Width="1.5" PointX="13.5" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLKURLAR" Width="1.5" PointX="3" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLODALAR" Width="1.5" PointX="3" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLPERSONEL" Width="1.5" PointX="8.25" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLREZERVASYON" Width="1.5" PointX="7.5" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLTELEFON" Width="1.5" PointX="3" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLURUN" Width="1.5" PointX="10.5" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLURUNGRUP" Width="1.5" PointX="3" PointY="49.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OtelModel.TBLUYRUK" Width="1.5" PointX="3" PointY="52" IsExpanded="true" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKA_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKA_TBLKURLAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKAHAREKET_TBLBANKA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKAHAREKET_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKAHAREKET_TBLISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLBANKAHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLBIRIM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARI_TBLCARITUR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARI_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARI_TBLUYRUK" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIHAREKET_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIKONUKHAREKET_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLREZERVASYON_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIHAREKET_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIHAREKET_TBLISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIHAREKET_TBLKURLAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIKONUKHAREKET_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIKONUKHAREKET_TBLODALAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARIKONUKHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLCARITUR_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLGOREV_TBLDEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLPERSONEL_TBLDEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLGOREV_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLISLEM_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKASA_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKASAHAREKET_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKURLAR_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKURLAR_TBLDURUM1" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLODALAR_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLPERSONEL_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLREZERVASYON_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLTELEFON_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLURUNGRUP_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLUYRUK_TBLDURUM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLPERSONEL_TBLGOREV" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKASAHAREKET_TBLISLEM" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKASAHAREKET_TBLKASA" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLKASAHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLREZERVASYON_TBLODALAR" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLURUNGRUP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
