@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Otel_App.Entity;
 using System.Data.Entity;
+using DevExpress.XtraEditors;
 
 namespace Otel_App.Forms
 {
@@ -28,6 +29,31 @@ namespace Otel_App.Forms
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                XtraMessageBox.Show(ex.Message, "Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void durumSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
+            db.SaveChanges();
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
