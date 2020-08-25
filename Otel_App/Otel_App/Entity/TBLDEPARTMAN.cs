@@ -30,5 +30,6 @@ namespace Otel_App.Entity
         public virtual ICollection<TBLGOREV> TBLGOREV { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLPERSONEL> TBLPERSONEL { get; set; }
+        public virtual TBLDURUM TBLDURUM { get; set; }
     }
 }

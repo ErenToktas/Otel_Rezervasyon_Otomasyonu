@@ -36,6 +36,7 @@ namespace Otel_App.Entity
             this.TBLURUN = new HashSet<TBLURUN>();
             this.TBLURUNGRUP = new HashSet<TBLURUNGRUP>();
             this.TBLUYRUK = new HashSet<TBLUYRUK>();
+            this.TBLDEPARTMAN = new HashSet<TBLDEPARTMAN>();
         }
     
         public int DURUMID { get; set; }
@@ -80,5 +81,7 @@ namespace Otel_App.Entity
         public virtual ICollection<TBLURUNGRUP> TBLURUNGRUP { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLUYRUK> TBLUYRUK { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TBLDEPARTMAN> TBLDEPARTMAN { get; set; }
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="OtelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="OtelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -502,6 +502,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_TBLDEPARTMAN_TBLDURUM">
+          <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
+          <End Role="TBLDEPARTMAN" Type="Self.TBLDEPARTMAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLDURUM">
+              <PropertyRef Name="DURUMID" />
+            </Principal>
+            <Dependent Role="TBLDEPARTMAN">
+              <PropertyRef Name="DURUM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TBLGOREV_TBLDEPARTMAN">
           <End Role="TBLDEPARTMAN" Type="Self.TBLDEPARTMAN" Multiplicity="0..1" />
           <End Role="TBLGOREV" Type="Self.TBLGOREV" Multiplicity="*" />
@@ -889,6 +901,10 @@
             <End Role="TBLDURUM" EntitySet="TBLDURUM" />
             <End Role="TBLCARITUR" EntitySet="TBLCARITUR" />
           </AssociationSet>
+          <AssociationSet Name="FK_TBLDEPARTMAN_TBLDURUM" Association="Self.FK_TBLDEPARTMAN_TBLDURUM">
+            <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+            <End Role="TBLDEPARTMAN" EntitySet="TBLDEPARTMAN" />
+          </AssociationSet>
           <AssociationSet Name="FK_TBLGOREV_TBLDEPARTMAN" Association="Self.FK_TBLGOREV_TBLDEPARTMAN">
             <End Role="TBLDEPARTMAN" EntitySet="TBLDEPARTMAN" />
             <End Role="TBLGOREV" EntitySet="TBLGOREV" />
@@ -986,8 +1002,7 @@
             <End Role="TBLUYRUK" EntitySet="TBLUYRUK" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="OtelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1128,6 +1143,7 @@
           <Property Name="DURUM" Type="Int32" />
           <NavigationProperty Name="TBLGOREV" Relationship="Self.FK_TBLGOREV_TBLDEPARTMAN" FromRole="TBLDEPARTMAN" ToRole="TBLGOREV" />
           <NavigationProperty Name="TBLPERSONEL" Relationship="Self.FK_TBLPERSONEL_TBLDEPARTMAN" FromRole="TBLDEPARTMAN" ToRole="TBLPERSONEL" />
+          <NavigationProperty Name="TBLDURUM" Relationship="OtelModel.FK_TBLDEPARTMAN_TBLDURUM" FromRole="TBLDEPARTMAN" ToRole="TBLDURUM" />
         </EntityType>
         <EntityType Name="TBLDURUM">
           <Key>
@@ -1155,6 +1171,7 @@
           <NavigationProperty Name="TBLURUN" Relationship="Self.FK_TBLURUN_TBLDURUM" FromRole="TBLDURUM" ToRole="TBLURUN" />
           <NavigationProperty Name="TBLURUNGRUP" Relationship="Self.FK_TBLURUNGRUP_TBLDURUM" FromRole="TBLDURUM" ToRole="TBLURUNGRUP" />
           <NavigationProperty Name="TBLUYRUK" Relationship="Self.FK_TBLUYRUK_TBLDURUM" FromRole="TBLDURUM" ToRole="TBLUYRUK" />
+          <NavigationProperty Name="TBLDEPARTMAN" Relationship="OtelModel.FK_TBLDEPARTMAN_TBLDURUM" FromRole="TBLDURUM" ToRole="TBLDEPARTMAN" />
         </EntityType>
         <EntityType Name="TBLGOREV">
           <Key>
@@ -2057,7 +2074,23 @@
             <End Role="TBLURUNGRUP" EntitySet="TBLURUNGRUP" />
             <End Role="TBLURUN" EntitySet="TBLURUN" />
           </AssociationSet>
+          <AssociationSet Name="FK_TBLDEPARTMAN_TBLDURUM" Association="OtelModel.FK_TBLDEPARTMAN_TBLDURUM">
+            <End Role="TBLDURUM" EntitySet="TBLDURUM" />
+            <End Role="TBLDEPARTMAN" EntitySet="TBLDEPARTMAN" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_TBLDEPARTMAN_TBLDURUM">
+          <End Type="OtelModel.TBLDURUM" Role="TBLDURUM" Multiplicity="0..1" />
+          <End Type="OtelModel.TBLDEPARTMAN" Role="TBLDEPARTMAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TBLDURUM">
+              <PropertyRef Name="DURUMID" />
+            </Principal>
+            <Dependent Role="TBLDEPARTMAN">
+              <PropertyRef Name="DURUM" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

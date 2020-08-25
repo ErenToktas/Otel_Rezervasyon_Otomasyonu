@@ -10,20 +10,19 @@ using System.Windows.Forms;
 using Otel_App.Entity;
 using System.Data.Entity;
 using DevExpress.XtraEditors;
-
 namespace Otel_App.Forms
 {
-    public partial class FrmDepartman : Form
+    public partial class Frmislemler : Form
     {
-        public FrmDepartman()
+        public Frmislemler()
         {
             InitializeComponent();
         }
         OtelEntities db = new OtelEntities();
-        private void FrmDepartman_Load(object sender, EventArgs e)
+        private void Frmislemler_Load(object sender, EventArgs e)
         {
-            db.TBLDEPARTMAN.Load();
-            bindingSource1.DataSource = db.TBLDEPARTMAN.Local;
+            db.TBLISLEM.Load();
+            bindingSource1.DataSource = db.TBLISLEM.Local;
             repositoryItemLookUpEdit1.DataSource = (from x in db.TBLDURUM
                                                     select new
                                                     {

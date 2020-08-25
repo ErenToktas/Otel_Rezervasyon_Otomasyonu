@@ -13,18 +13,25 @@ using DevExpress.XtraEditors;
 
 namespace Otel_App.Forms
 {
-    public partial class FrmDepartman : Form
+    public partial class FrmGorev : Form
     {
-        public FrmDepartman()
+        public FrmGorev()
         {
             InitializeComponent();
         }
         OtelEntities db = new OtelEntities();
-        private void FrmDepartman_Load(object sender, EventArgs e)
+        private void FrmGorev_Load(object sender, EventArgs e)
         {
-            db.TBLDEPARTMAN.Load();
-            bindingSource1.DataSource = db.TBLDEPARTMAN.Local;
-            repositoryItemLookUpEdit1.DataSource = (from x in db.TBLDURUM
+            db.TBLGOREV.Load();
+            bindingSource1.DataSource = db.TBLGOREV.Local;
+
+            repositoryItemLookUpEdit1.DataSource = (from x in db.TBLDEPARTMAN
+                                                    select new
+                                                    {
+                                                        x.DEPARTMANID,
+                                                        x.DEPARTMANAD
+                                                    }).ToList();
+            repositoryItemLookUpEdit2.DataSource = (from x in db.TBLDURUM
                                                     select new
                                                     {
                                                         x.DURUMID,

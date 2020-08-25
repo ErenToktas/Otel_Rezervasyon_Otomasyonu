@@ -70,6 +70,7 @@
         <AssociationConnector Association="OtelModel.FK_TBLREZERVASYON_TBLODALAR" ManuallyRouted="false" />
         <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLPERSONEL" ManuallyRouted="false" />
         <AssociationConnector Association="OtelModel.FK_TBLURUN_TBLURUNGRUP" ManuallyRouted="false" />
+        <AssociationConnector Association="OtelModel.FK_TBLDEPARTMAN_TBLDURUM" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
