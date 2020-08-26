@@ -146,11 +146,23 @@
     <Compile Include="Entity\TBLUYRUK.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmBankalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBankalar.Designer.cs">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmBirim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmBirim.Designer.cs">
       <DependentUpon>FrmBirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCariTurleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCariTurleri.Designer.cs">
+      <DependentUpon>FrmCariTurleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmDepartman.cs">
       <SubType>Form</SubType>
@@ -176,16 +188,52 @@
     <Compile Include="Forms\Frmislemler.Designer.cs">
       <DependentUpon>Frmislemler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmKasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmKasalar.Designer.cs">
+      <DependentUpon>FrmKasalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmKurlar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmKurlar.Designer.cs">
       <DependentUpon>FrmKurlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmOdalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOdalar.Designer.cs">
+      <DependentUpon>FrmOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTanimlamaYonlendir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTanimlamaYonlendir.Designer.cs">
+      <DependentUpon>FrmTanimlamaYonlendir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTelefon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTelefon.Designer.cs">
+      <DependentUpon>FrmTelefon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmUrunGrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUrunGrup.Designer.cs">
+      <DependentUpon>FrmUrunGrup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmBankalar.resx">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmBirim.resx">
       <DependentUpon>FrmBirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCariTurleri.resx">
+      <DependentUpon>FrmCariTurleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDepartman.resx">
       <DependentUpon>FrmDepartman.cs</DependentUpon>
@@ -199,8 +247,23 @@
     <EmbeddedResource Include="Forms\Frmislemler.resx">
       <DependentUpon>Frmislemler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmKasalar.resx">
+      <DependentUpon>FrmKasalar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmKurlar.resx">
       <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOdalar.resx">
+      <DependentUpon>FrmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTanimlamaYonlendir.resx">
+      <DependentUpon>FrmTanimlamaYonlendir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTelefon.resx">
+      <DependentUpon>FrmTelefon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUrunGrup.resx">
+      <DependentUpon>FrmUrunGrup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
