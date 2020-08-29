@@ -58,6 +58,7 @@
           <Property Name="CARIADRES" Type="varchar" MaxLength="100" />
           <Property Name="CARITC" Type="char" MaxLength="11" />
           <Property Name="VERGIDAIRE" Type="varchar" MaxLength="30" />
+          <Property Name="VERGINO" Type="varchar" MaxLength="20" />
           <Property Name="TELEFON" Type="varchar" MaxLength="20" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
           <Property Name="KIMLIKFOTO1" Type="varchar" MaxLength="100" />
@@ -730,18 +731,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TBLURUN_TBLBIRIM">
-          <End Role="TBLBIRIM" Type="Self.TBLBIRIM" Multiplicity="0..1" />
-          <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TBLBIRIM">
-              <PropertyRef Name="BIRIMID" />
-            </Principal>
-            <Dependent Role="TBLURUN">
-              <PropertyRef Name="BIRIM" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_TBLURUN_TBLDURUM">
           <End Role="TBLDURUM" Type="Self.TBLDURUM" Multiplicity="0..1" />
           <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="*" />
@@ -977,10 +966,6 @@
             <End Role="TBLDURUM" EntitySet="TBLDURUM" />
             <End Role="TBLTELEFON" EntitySet="TBLTELEFON" />
           </AssociationSet>
-          <AssociationSet Name="FK_TBLURUN_TBLBIRIM" Association="Self.FK_TBLURUN_TBLBIRIM">
-            <End Role="TBLBIRIM" EntitySet="TBLBIRIM" />
-            <End Role="TBLURUN" EntitySet="TBLURUN" />
-          </AssociationSet>
           <AssociationSet Name="FK_TBLURUN_TBLDURUM" Association="Self.FK_TBLURUN_TBLDURUM">
             <End Role="TBLDURUM" EntitySet="TBLDURUM" />
             <End Role="TBLURUN" EntitySet="TBLURUN" />
@@ -1083,6 +1068,7 @@
           <NavigationProperty Name="TBLCARIHAREKET" Relationship="Self.FK_TBLCARIHAREKET_TBLCARI" FromRole="TBLCARI" ToRole="TBLCARIHAREKET" />
           <NavigationProperty Name="TBLCARIKONUKHAREKET" Relationship="Self.FK_TBLCARIKONUKHAREKET_TBLCARI" FromRole="TBLCARI" ToRole="TBLCARIKONUKHAREKET" />
           <NavigationProperty Name="TBLREZERVASYON" Relationship="Self.FK_TBLREZERVASYON_TBLCARI" FromRole="TBLCARI" ToRole="TBLREZERVASYON" />
+          <Property Name="VERGINO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLCARIHAREKET">
           <Key>
@@ -2148,6 +2134,7 @@
           <EntitySetMapping Name="TBLCARI">
             <EntityTypeMapping TypeName="OtelModel.TBLCARI">
               <MappingFragment StoreEntitySet="TBLCARI">
+                <ScalarProperty Name="VERGINO" ColumnName="VERGINO" />
                 <ScalarProperty Name="CARIID" ColumnName="CARIID" />
                 <ScalarProperty Name="CARIADSOYAD" ColumnName="CARIADSOYAD" />
                 <ScalarProperty Name="CARIADRES" ColumnName="CARIADRES" />

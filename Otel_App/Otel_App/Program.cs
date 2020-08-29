@@ -16,7 +16,7 @@ namespace Otel_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.FrmTanimlamaYonlendir());
+            Application.Run(new Urun.FrmUrun());
         }
     }
 }

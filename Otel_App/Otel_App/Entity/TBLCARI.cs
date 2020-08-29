@@ -37,6 +37,7 @@ namespace Otel_App.Entity
         public Nullable<int> UYRUK { get; set; }
         public Nullable<decimal> BAKIYE { get; set; }
         public Nullable<int> DURUM { get; set; }
+        public string VERGINO { get; set; }
     
         public virtual TBLCARITUR TBLCARITUR { get; set; }
         public virtual TBLDURUM TBLDURUM { get; set; }
