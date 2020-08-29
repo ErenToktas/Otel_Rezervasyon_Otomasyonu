@@ -30,22 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrun));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
+            this.txtKod = new System.Windows.Forms.TextBox();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.lookUpEditBirim = new DevExpress.XtraEditors.LookUpEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.txtAdSoyad = new System.Windows.Forms.TextBox();
+            this.txtUrunAd = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.lookUpEdit5 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit6 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditGrup = new DevExpress.XtraEditors.LookUpEdit();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtFiyat = new System.Windows.Forms.TextBox();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit7 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditParaBirim = new DevExpress.XtraEditors.LookUpEdit();
             this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
@@ -55,59 +54,89 @@
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.rchAdres = new System.Windows.Forms.RichTextBox();
+            this.rchAciklama = new System.Windows.Forms.RichTextBox();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.btnVazgeç = new DevExpress.XtraEditors.SimpleButton();
+            this.comboBoxEditKdv = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBirim.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditGrup.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditParaBirim.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditKdv.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.pictureEdit7);
-            this.groupControl1.Controls.Add(this.textBox2);
+            this.groupControl1.Controls.Add(this.txtKod);
             this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.lookUpEdit1);
+            this.groupControl1.Controls.Add(this.lookUpEditBirim);
             this.groupControl1.Controls.Add(this.pictureEdit2);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.pictureEdit1);
-            this.groupControl1.Controls.Add(this.txtAdSoyad);
+            this.groupControl1.Controls.Add(this.txtUrunAd);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
             this.groupControl1.Size = new System.Drawing.Size(757, 145);
-            this.groupControl1.TabIndex = 18;
+            this.groupControl1.TabIndex = 0;
             // 
-            // lookUpEdit1
+            // pictureEdit7
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(531, 27);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
+            this.pictureEdit7.Location = new System.Drawing.Point(37, 14);
+            this.pictureEdit7.Name = "pictureEdit7";
+            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit7.Size = new System.Drawing.Size(40, 43);
+            this.pictureEdit7.TabIndex = 33;
+            // 
+            // txtKod
+            // 
+            this.txtKod.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKod.Location = new System.Drawing.Point(195, 29);
+            this.txtKod.Name = "txtKod";
+            this.txtKod.Size = new System.Drawing.Size(187, 28);
+            this.txtKod.TabIndex = 0;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl7.Location = new System.Drawing.Point(83, 24);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(106, 37);
+            this.labelControl7.TabIndex = 31;
+            this.labelControl7.Text = "Ürün Kodu :";
+            // 
+            // lookUpEditBirim
+            // 
+            this.lookUpEditBirim.Location = new System.Drawing.Point(531, 27);
+            this.lookUpEditBirim.Name = "lookUpEditBirim";
+            this.lookUpEditBirim.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lookUpEditBirim.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEditBirim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.DisplayMember = "CARITURAD";
-            this.lookUpEdit1.Properties.NullText = "Birim Seçiniz";
-            this.lookUpEdit1.Properties.ValueMember = "CARITURID";
-            this.lookUpEdit1.Size = new System.Drawing.Size(211, 28);
-            this.lookUpEdit1.TabIndex = 18;
+            this.lookUpEditBirim.Properties.DisplayMember = "BIRIMAD";
+            this.lookUpEditBirim.Properties.NullText = "Birim Seçiniz";
+            this.lookUpEditBirim.Properties.ValueMember = "BIRIMID";
+            this.lookUpEditBirim.Size = new System.Drawing.Size(211, 28);
+            this.lookUpEditBirim.TabIndex = 1;
             // 
             // pictureEdit2
             // 
@@ -140,13 +169,13 @@
             this.pictureEdit1.Size = new System.Drawing.Size(40, 43);
             this.pictureEdit1.TabIndex = 19;
             // 
-            // txtAdSoyad
+            // txtUrunAd
             // 
-            this.txtAdSoyad.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdSoyad.Location = new System.Drawing.Point(195, 97);
-            this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(547, 28);
-            this.txtAdSoyad.TabIndex = 17;
+            this.txtUrunAd.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUrunAd.Location = new System.Drawing.Point(195, 97);
+            this.txtUrunAd.Name = "txtUrunAd";
+            this.txtUrunAd.Size = new System.Drawing.Size(547, 28);
+            this.txtUrunAd.TabIndex = 2;
             // 
             // labelControl1
             // 
@@ -159,43 +188,14 @@
             this.labelControl1.TabIndex = 16;
             this.labelControl1.Text = "Ürün Adı :";
             // 
-            // pictureEdit7
-            // 
-            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(37, 14);
-            this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Size = new System.Drawing.Size(40, 43);
-            this.pictureEdit7.TabIndex = 33;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(195, 29);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 28);
-            this.textBox2.TabIndex = 32;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl7.Location = new System.Drawing.Point(83, 24);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(106, 37);
-            this.labelControl7.TabIndex = 31;
-            this.labelControl7.Text = "Ürün Kodu :";
-            // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.lookUpEdit5);
-            this.groupControl2.Controls.Add(this.lookUpEdit6);
+            this.groupControl2.Controls.Add(this.comboBoxEditKdv);
+            this.groupControl2.Controls.Add(this.lookUpEditGrup);
             this.groupControl2.Controls.Add(this.pictureEdit9);
-            this.groupControl2.Controls.Add(this.textBox4);
+            this.groupControl2.Controls.Add(this.txtFiyat);
             this.groupControl2.Controls.Add(this.labelControl9);
-            this.groupControl2.Controls.Add(this.lookUpEdit7);
+            this.groupControl2.Controls.Add(this.lookUpEditParaBirim);
             this.groupControl2.Controls.Add(this.pictureEdit10);
             this.groupControl2.Controls.Add(this.labelControl10);
             this.groupControl2.Controls.Add(this.pictureEdit11);
@@ -206,33 +206,21 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
             this.groupControl2.Size = new System.Drawing.Size(757, 207);
-            this.groupControl2.TabIndex = 19;
+            this.groupControl2.TabIndex = 1;
             // 
-            // lookUpEdit5
+            // lookUpEditGrup
             // 
-            this.lookUpEdit5.Location = new System.Drawing.Point(550, 27);
-            this.lookUpEdit5.Name = "lookUpEdit5";
-            this.lookUpEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lookUpEdit5.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEditGrup.Location = new System.Drawing.Point(186, 31);
+            this.lookUpEditGrup.Name = "lookUpEditGrup";
+            this.lookUpEditGrup.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lookUpEditGrup.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEditGrup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit5.Properties.NullText = "Ülke Seçiniz";
-            this.lookUpEdit5.Size = new System.Drawing.Size(191, 28);
-            this.lookUpEdit5.TabIndex = 38;
-            // 
-            // lookUpEdit6
-            // 
-            this.lookUpEdit6.Location = new System.Drawing.Point(186, 31);
-            this.lookUpEdit6.Name = "lookUpEdit6";
-            this.lookUpEdit6.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lookUpEdit6.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit6.Properties.DisplayMember = "CARITURAD";
-            this.lookUpEdit6.Properties.NullText = "Grup Seçiniz";
-            this.lookUpEdit6.Properties.ValueMember = "CARITURID";
-            this.lookUpEdit6.Size = new System.Drawing.Size(195, 28);
-            this.lookUpEdit6.TabIndex = 37;
+            this.lookUpEditGrup.Properties.DisplayMember = "GRUPADI";
+            this.lookUpEditGrup.Properties.NullText = "Grup Seçiniz";
+            this.lookUpEditGrup.Properties.ValueMember = "URUNGRUPID";
+            this.lookUpEditGrup.Size = new System.Drawing.Size(195, 28);
+            this.lookUpEditGrup.TabIndex = 0;
             // 
             // pictureEdit9
             // 
@@ -244,13 +232,13 @@
             this.pictureEdit9.Size = new System.Drawing.Size(40, 43);
             this.pictureEdit9.TabIndex = 33;
             // 
-            // textBox4
+            // txtFiyat
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox4.Location = new System.Drawing.Point(190, 154);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(551, 28);
-            this.textBox4.TabIndex = 32;
+            this.txtFiyat.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtFiyat.Location = new System.Drawing.Point(190, 154);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(551, 28);
+            this.txtFiyat.TabIndex = 3;
             // 
             // labelControl9
             // 
@@ -263,19 +251,19 @@
             this.labelControl9.TabIndex = 31;
             this.labelControl9.Text = "Fiyat :";
             // 
-            // lookUpEdit7
+            // lookUpEditParaBirim
             // 
-            this.lookUpEdit7.Location = new System.Drawing.Point(190, 92);
-            this.lookUpEdit7.Name = "lookUpEdit7";
-            this.lookUpEdit7.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lookUpEdit7.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEditParaBirim.Location = new System.Drawing.Point(190, 92);
+            this.lookUpEditParaBirim.Name = "lookUpEditParaBirim";
+            this.lookUpEditParaBirim.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lookUpEditParaBirim.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEditParaBirim.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit7.Properties.DisplayMember = "ULKEAD";
-            this.lookUpEdit7.Properties.NullText = "Ülke Seçiniz";
-            this.lookUpEdit7.Properties.ValueMember = "UYRUKID";
-            this.lookUpEdit7.Size = new System.Drawing.Size(191, 28);
-            this.lookUpEdit7.TabIndex = 30;
+            this.lookUpEditParaBirim.Properties.DisplayMember = "KURAD";
+            this.lookUpEditParaBirim.Properties.NullText = "Para Birim Seçiniz";
+            this.lookUpEditParaBirim.Properties.ValueMember = "KURID";
+            this.lookUpEditParaBirim.Size = new System.Drawing.Size(191, 28);
+            this.lookUpEditParaBirim.TabIndex = 2;
             // 
             // pictureEdit10
             // 
@@ -344,12 +332,12 @@
             // 
             this.groupControl3.Controls.Add(this.pictureEdit6);
             this.groupControl3.Controls.Add(this.labelControl6);
-            this.groupControl3.Controls.Add(this.rchAdres);
+            this.groupControl3.Controls.Add(this.rchAciklama);
             this.groupControl3.Location = new System.Drawing.Point(13, 376);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
             this.groupControl3.Size = new System.Drawing.Size(756, 150);
-            this.groupControl3.TabIndex = 20;
+            this.groupControl3.TabIndex = 2;
             // 
             // pictureEdit6
             // 
@@ -372,14 +360,14 @@
             this.labelControl6.TabIndex = 20;
             this.labelControl6.Text = "Açıklama :";
             // 
-            // rchAdres
+            // rchAciklama
             // 
-            this.rchAdres.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchAdres.Location = new System.Drawing.Point(186, 15);
-            this.rchAdres.Name = "rchAdres";
-            this.rchAdres.Size = new System.Drawing.Size(555, 114);
-            this.rchAdres.TabIndex = 0;
-            this.rchAdres.Text = "";
+            this.rchAciklama.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchAciklama.Location = new System.Drawing.Point(186, 15);
+            this.rchAciklama.Name = "rchAciklama";
+            this.rchAciklama.Size = new System.Drawing.Size(555, 114);
+            this.rchAciklama.TabIndex = 0;
+            this.rchAciklama.Text = "";
             // 
             // btnKaydet
             // 
@@ -389,8 +377,9 @@
             this.btnKaydet.Location = new System.Drawing.Point(631, 545);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(134, 46);
-            this.btnKaydet.TabIndex = 40;
+            this.btnKaydet.TabIndex = 4;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // btnVazgeç
             // 
@@ -400,8 +389,26 @@
             this.btnVazgeç.Location = new System.Drawing.Point(464, 545);
             this.btnVazgeç.Name = "btnVazgeç";
             this.btnVazgeç.Size = new System.Drawing.Size(134, 46);
-            this.btnVazgeç.TabIndex = 39;
+            this.btnVazgeç.TabIndex = 3;
             this.btnVazgeç.Text = "Vazgeç";
+            this.btnVazgeç.Click += new System.EventHandler(this.btnVazgeç_Click);
+            // 
+            // comboBoxEditKdv
+            // 
+            this.comboBoxEditKdv.Location = new System.Drawing.Point(550, 27);
+            this.comboBoxEditKdv.Name = "comboBoxEditKdv";
+            this.comboBoxEditKdv.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBoxEditKdv.Properties.Appearance.Options.UseFont = true;
+            this.comboBoxEditKdv.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEditKdv.Properties.Items.AddRange(new object[] {
+            "1",
+            "8",
+            "10",
+            "18",
+            "20"});
+            this.comboBoxEditKdv.Size = new System.Drawing.Size(191, 28);
+            this.comboBoxEditKdv.TabIndex = 34;
             // 
             // FrmUrun
             // 
@@ -416,26 +423,27 @@
             this.Name = "FrmUrun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Ürün Ekle";
+            this.Load += new System.EventHandler(this.FrmUrun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditBirim.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditGrup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditParaBirim.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEditKdv.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -443,22 +451,21 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditBirim;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private System.Windows.Forms.TextBox txtAdSoyad;
+        private System.Windows.Forms.TextBox txtUrunAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKod;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit6;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditGrup;
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit7;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditParaBirim;
         private DevExpress.XtraEditors.PictureEdit pictureEdit10;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PictureEdit pictureEdit11;
@@ -468,8 +475,9 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private System.Windows.Forms.RichTextBox rchAdres;
+        private System.Windows.Forms.RichTextBox rchAciklama;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.SimpleButton btnVazgeç;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEditKdv;
     }
 }

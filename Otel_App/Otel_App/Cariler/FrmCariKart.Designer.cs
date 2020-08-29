@@ -71,10 +71,10 @@
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
             this.txtTCno = new System.Windows.Forms.TextBox();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.txtYetkili = new System.Windows.Forms.TextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.txtYetkili = new System.Windows.Forms.TextBox();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -110,12 +110,13 @@
             this.groupBox1.Controls.Add(this.groupControl1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 207);
+            this.groupBox1.Size = new System.Drawing.Size(758, 257);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.lookUpEdit2);
             this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.pictureEdit4);
@@ -135,7 +136,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
             this.groupControl1.Size = new System.Drawing.Size(757, 257);
-            this.groupControl1.TabIndex = 17;
+            this.groupControl1.TabIndex = 0;
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
             // lookUpEdit2
@@ -150,7 +151,7 @@
             this.lookUpEdit2.Properties.NullText = "Ülke Seçiniz";
             this.lookUpEdit2.Properties.ValueMember = "UYRUKID";
             this.lookUpEdit2.Size = new System.Drawing.Size(191, 28);
-            this.lookUpEdit2.TabIndex = 30;
+            this.lookUpEdit2.TabIndex = 2;
             // 
             // lookUpEdit1
             // 
@@ -164,12 +165,12 @@
             this.lookUpEdit1.Properties.NullText = "Tür Seçiniz";
             this.lookUpEdit1.Properties.ValueMember = "CARITURID";
             this.lookUpEdit1.Size = new System.Drawing.Size(191, 28);
-            this.lookUpEdit1.TabIndex = 18;
+            this.lookUpEdit1.TabIndex = 1;
             // 
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(396, 140);
+            this.pictureEdit4.Location = new System.Drawing.Point(396, 141);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -182,7 +183,7 @@
             this.txtVergiNo.Location = new System.Drawing.Point(550, 151);
             this.txtVergiNo.Name = "txtVergiNo";
             this.txtVergiNo.Size = new System.Drawing.Size(191, 28);
-            this.txtVergiNo.TabIndex = 28;
+            this.txtVergiNo.TabIndex = 4;
             // 
             // labelControl4
             // 
@@ -211,7 +212,7 @@
             this.txtVergiDaire.Location = new System.Drawing.Point(186, 151);
             this.txtVergiDaire.Name = "txtVergiDaire";
             this.txtVergiDaire.Size = new System.Drawing.Size(191, 28);
-            this.txtVergiDaire.TabIndex = 25;
+            this.txtVergiDaire.TabIndex = 3;
             // 
             // labelControl5
             // 
@@ -227,7 +228,7 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(396, 80);
+            this.pictureEdit3.Location = new System.Drawing.Point(396, 81);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -282,7 +283,7 @@
             this.txtAdSoyad.Location = new System.Drawing.Point(186, 32);
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(555, 28);
-            this.txtAdSoyad.TabIndex = 17;
+            this.txtAdSoyad.TabIndex = 0;
             // 
             // labelControl1
             // 
@@ -305,7 +306,7 @@
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.Size = new System.Drawing.Size(758, 315);
-            this.xtraTabControl1.TabIndex = 16;
+            this.xtraTabControl1.TabIndex = 4;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
             this.xtraTabPage2,
@@ -346,7 +347,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(576, 202);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(134, 46);
-            this.btnKaydet.TabIndex = 38;
+            this.btnKaydet.TabIndex = 4;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -358,7 +359,7 @@
             this.btnVazgeç.Location = new System.Drawing.Point(409, 202);
             this.btnVazgeç.Name = "btnVazgeç";
             this.btnVazgeç.Size = new System.Drawing.Size(134, 46);
-            this.btnVazgeç.TabIndex = 37;
+            this.btnVazgeç.TabIndex = 3;
             this.btnVazgeç.Text = "Vazgeç";
             this.btnVazgeç.Click += new System.EventHandler(this.btnVazgeç_Click);
             // 
@@ -388,7 +389,7 @@
             this.txtMail.Location = new System.Drawing.Point(514, 153);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(196, 28);
-            this.txtMail.TabIndex = 35;
+            this.txtMail.TabIndex = 2;
             // 
             // labelControl6
             // 
@@ -437,7 +438,7 @@
             this.txtTelefon.Location = new System.Drawing.Point(151, 153);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(192, 28);
-            this.txtTelefon.TabIndex = 32;
+            this.txtTelefon.TabIndex = 1;
             // 
             // labelControl8
             // 
@@ -553,18 +554,7 @@
             this.txtTCno.Location = new System.Drawing.Point(563, 225);
             this.txtTCno.Name = "txtTCno";
             this.txtTCno.Size = new System.Drawing.Size(191, 28);
-            this.txtTCno.TabIndex = 35;
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl10.Location = new System.Drawing.Point(486, 220);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(66, 37);
-            this.labelControl10.TabIndex = 34;
-            this.labelControl10.Text = "TC No :";
+            this.txtTCno.TabIndex = 3;
             // 
             // pictureEdit13
             // 
@@ -574,15 +564,7 @@
             this.pictureEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit13.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit13.Size = new System.Drawing.Size(40, 43);
-            this.pictureEdit13.TabIndex = 33;
-            // 
-            // txtYetkili
-            // 
-            this.txtYetkili.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtYetkili.Location = new System.Drawing.Point(199, 225);
-            this.txtYetkili.Name = "txtYetkili";
-            this.txtYetkili.Size = new System.Drawing.Size(191, 28);
-            this.txtYetkili.TabIndex = 32;
+            this.pictureEdit13.TabIndex = 36;
             // 
             // labelControl11
             // 
@@ -592,22 +574,40 @@
             this.labelControl11.Location = new System.Drawing.Point(120, 220);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(73, 37);
-            this.labelControl11.TabIndex = 31;
+            this.labelControl11.TabIndex = 35;
             this.labelControl11.Text = "Yetkili :";
+            // 
+            // txtYetkili
+            // 
+            this.txtYetkili.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtYetkili.Location = new System.Drawing.Point(199, 225);
+            this.txtYetkili.Name = "txtYetkili";
+            this.txtYetkili.Size = new System.Drawing.Size(191, 28);
+            this.txtYetkili.TabIndex = 2;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl10.Location = new System.Drawing.Point(473, 208);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(66, 39);
+            this.labelControl10.TabIndex = 35;
+            this.labelControl10.Text = "TC No :";
             // 
             // FrmCariKart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 603);
+            this.Controls.Add(this.pictureEdit13);
+            this.Controls.Add(this.labelControl11);
             this.Controls.Add(this.pictureEdit12);
+            this.Controls.Add(this.txtYetkili);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.txtTCno);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.labelControl10);
-            this.Controls.Add(this.pictureEdit13);
-            this.Controls.Add(this.labelControl11);
-            this.Controls.Add(this.txtYetkili);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCariKart";
@@ -693,9 +693,9 @@
         private System.Windows.Forms.RichTextBox rchAciklama;
         private DevExpress.XtraEditors.PictureEdit pictureEdit12;
         private System.Windows.Forms.TextBox txtTCno;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.PictureEdit pictureEdit13;
-        private System.Windows.Forms.TextBox txtYetkili;
         private DevExpress.XtraEditors.LabelControl labelControl11;
+        private System.Windows.Forms.TextBox txtYetkili;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
     }
 }
